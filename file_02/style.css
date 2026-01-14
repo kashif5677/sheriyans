@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  cursor: none;
+}
+
+div {
+  background: #8a8a8a;
+  height: 100%;
+  width: 100%;
+}
+div #outer {
+  height: 100%;
+  width: 100%;
+}
+div #outer #cursor {
+  position: fixed;
+  background: red;
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=style.css.map */

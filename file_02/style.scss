@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  cursor: none;
+//   background: rgb(216, 30, 30);
+}
+div{
+    background: #8a8a8a;
+    height: 100%;
+    width: 100%;
+    #outer{
+        height: 100%;
+        width: 100%;
+        // background-color: green;
+
+        #cursor{
+            position: fixed;
+            background:red;
+            height: 30px;
+            width: 30px;
+            border-radius: 20px;
+            transform: translate(-50%,-50%);
+        }
+    }
+}
