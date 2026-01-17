@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(7, 6, 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@property --rotate{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+@keyframes borderAnimate{
+    from{
+        --rotate:0deg
+    }
+    to{
+        --rotate:360deg
+    }
+}
+
+.box{
+    max-width: 300px;
+  
+    padding-inline: 10px;
+    padding-bottom: 10px;
+    border: 0px solid rgba(255, 255, 255, 0);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 0p rgb(255, 81, 0);
+    text-shadow: 0 0 0;
+    border-radius: 15px;
+    background:
+            linear-gradient(black) padding-box,
+            conic-gradient(from var(--rotate),black,red,black) border-box;
+    animation: borderAnimate 5s infinite linear;
+    animation-play-state: paused;
+    transition: all 0.2s linear;
+    
+
+}
+.box:hover{
+    animation-play-state: running;
+    border-width: 5px;
+    color: rgb(243, 5, 17);   
+     box-shadow: 0 0 30px rgb(255, 81, 0);
+     text-shadow: 0px 0px 20px rgb(255, 81, 0);
+
+}
+
+.box img{
+    width: 100%;
+  
+   
+}
+/* h1,p{
+    padding: 10px;
+} */
