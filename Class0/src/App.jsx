@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react'
 import Card from './../components/Card';
 
@@ -76,6 +77,15 @@ const deleteHandler=(idx)=>{
        })}
       </div>
  
+=======
+import React from 'react'
+import Navbar from '../components/Navbar'
+
+function App() {
+  return (
+    <div>
+      <Navbar/>
+>>>>>>> d5e2b38e8aaabf6c389ea8700406f3ed6d9b1c72
     </div>
   )
 }
